@@ -1,20 +1,14 @@
-# Define a function named 'three_sum' that takes a list of numbers 'nums' as a parameter.
 def three_sum(nums):
     # Initialize an empty list to store the results.
     result = []
     # Sort the input list in ascending order.
     nums.sort()
     
-    # Iterate through the list up to the third-to-last element.
     for i in range(len(nums) - 2):
-        # Skip duplicate values at the current position.
         if i > 0 and nums[i] == nums[i - 1]:
             continue
+         l, r = i + 1, len(nums) - 1
         
-        # Set two pointers, 'l' and 'r', to find the other two elements in the triplet.
-        l, r = i + 1, len(nums) - 1
-        
-        # Perform a two-pointer search to find triplets with the sum equal to zero.
         while l < r:
             s = nums[i] + nums[l] + nums[r]
             
