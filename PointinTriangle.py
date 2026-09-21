@@ -1,5 +1,3 @@
-# Prompt user to input coordinates of the triangle vertices (x1, y1), (x2, y2), (x3, y3),
-# and the point (xp, yp) to check if it lies inside the triangle
 print("Input x1, y1, x2, y2, x3, y3, xp, yp:")
 x1, y1, x2, y2, x3, y3, xp, yp = map(float, input().split())
 
