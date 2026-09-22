@@ -1,4 +1,3 @@
-# Function to count the number of times a positive integer can be cubed until it is less than 3.
 def test(n):
     ctr = 0
     
