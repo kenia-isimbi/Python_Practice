@@ -4,7 +4,7 @@ while True:
     l = input()
     
     if l:
-        lines.append(l.upper())
+        lines.append(l.lower())
     else:
         break;
 
